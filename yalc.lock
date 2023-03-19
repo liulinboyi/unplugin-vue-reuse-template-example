@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "unplugin-vue-reuse-template": {
+      "signature": "12417b791343ef47a8d502250a720435",
+      "file": true,
+      "replaced": "^0.0.3"
+    }
+  }
+}

@@ -1,7 +1,11 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-const count = ref(0)
-const asAny = (foo: any) => foo as any;
+<script setup>
+import { ref } from "vue";
+const count = ref(0);
+const all = ref([
+  { checked: false, name: 1 },
+  { checked: false, name: 2 },
+  { checked: false, name: 3 },
+]);
 </script>
 
 <!-- Right Case -->
@@ -11,7 +15,8 @@ const asAny = (foo: any) => foo as any;
 <template>
   <div>
     <container outlet="menu" />
-    <div v-for="(n, index) in [1,2,3]">
+    <container outlet="listValue" />
+    <div v-for="(n, index) in all">
       <container outlet="list" />
     </div>
   </div>
@@ -20,6 +25,17 @@ const asAny = (foo: any) => foo as any;
 <template $menu>
   <div class="count" @click="count++">
     {{ count }}
+  </div>
+</template>
+
+<template $listValue>
+  {{ all }}
+</template>
+
+<template $list>
+  <div class="list">
+    <input type="checkbox" :id="n.name" :name="n.name" v-model="n.checked"/>
+    <label :for="n.name">{{ n.name }}</label>
   </div>
 </template>
 

@@ -541,10 +541,10 @@ typescript@^4.7.4, typescript@^4.9.3:
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
-unplugin-vue-reuse-template@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.npmjs.org/unplugin-vue-reuse-template/-/unplugin-vue-reuse-template-0.0.3.tgz#d5c7e052db954185e323355f7ef0c8afade96192"
-  integrity sha512-8lygTsULGjXprouKdag2jUQcG9eznoU1VR9YgbcqJw05YE93Yb784eTwFfvUOgmDe6XZc1AnSYQ5wKQ9mfvCxw==
+unplugin-vue-reuse-template@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/unplugin-vue-reuse-template/-/unplugin-vue-reuse-template-0.0.5.tgz#d5b2c20220496e4147975e6bb31aeacf50c2c8d6"
+  integrity sha512-bD9Rlrx6bsOtmvJIKUh1einZKsQyxAJD+opcL1SNgOnkye4YdUXcC331nuyFQfCeMA0t5wo1EXoluPeJxKPrqw==
   dependencies:
     "@babel/parser" "^7.19.4"
     "@rollup/pluginutils" "^4.2.1"
